@@ -36,12 +36,8 @@ public class TitleViewBinder extends ItemViewBinder<AlllBean, TitleViewBinder.Ti
 
     @Override
     public void onBindViewHolder(@NonNull TitleHolder titleHolder, AlllBean title) {
-//        for (int i = 0; i < title.getList1().size(); i++) {
-//            titleHolder.tv0.setText(title.getList1().get(i).getTitle());
-//        }
 
         titleHolder.tv0.setText(title.getList1().get(0).getTitle());
-
         //填充数据渲染页面，比如setText setImage等工作
     }
 

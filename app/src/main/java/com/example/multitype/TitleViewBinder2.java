@@ -51,7 +51,6 @@ public class TitleViewBinder2 extends ItemViewBinder<AlllBean, TitleViewBinder2.
     }
 
     static class TitleHolder extends RecyclerView.ViewHolder {
-        ImageView icon0;
         TextView tv0;
         RecyclerView recyclerView;
 

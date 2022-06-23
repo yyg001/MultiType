@@ -27,7 +27,6 @@ import me.drakeet.multitype.MultiTypeAdapter;
 public class MainActivity extends AppCompatActivity {
 
     RecyclerView recycleView;
-    //    List<Object> list;
     AlllBean bean = new AlllBean();
     Button button;
     private MultiTypeAdapter multiTypeAdapter;
@@ -53,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 list2.add(new Title2("刺激战场2", "22"));
                 list2.add(new Title2("战地之王2", "22"));
                 bean.setList2(list2);
-
 
                 Items items = new Items();
 
@@ -103,8 +101,8 @@ public class MainActivity extends AppCompatActivity {
         bean.setList3(list3);
 
         Items items = new Items();
-//        items.add(bean);
-        for (int i = 0; i < 3; i++) {
+
+        for (int i = 0; i < 3; i++) {//几种类型数量就是几
             items.add(bean);
         }
 

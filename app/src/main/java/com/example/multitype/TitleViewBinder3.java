@@ -35,7 +35,6 @@ public class TitleViewBinder3 extends ItemViewBinder<AlllBean, TitleViewBinder3.
         return new TitleHolder(view);
     }
 
-
     @SuppressLint("ResourceAsColor")
     @Override
     public void onBindViewHolder(@NonNull TitleHolder titleHolder, AlllBean title) {
