@@ -43,7 +43,6 @@ public class TitleViewBinder2 extends ItemViewBinder<AlllBean, TitleViewBinder2.
     @Override
     public void onBindViewHolder(@NonNull TitleHolder titleHolder, AlllBean title) {
 
-        titleHolder.tv0.setText(title.getList2().get(0).getTitle());
         titleHolder.recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
         AccessoriesDetailAdapter accessoriesDetailAdapter =new AccessoriesDetailAdapter(mContext,title.getList2());
         titleHolder.recyclerView.setAdapter(accessoriesDetailAdapter);
@@ -51,13 +50,11 @@ public class TitleViewBinder2 extends ItemViewBinder<AlllBean, TitleViewBinder2.
     }
 
     static class TitleHolder extends RecyclerView.ViewHolder {
-        TextView tv0;
         RecyclerView recyclerView;
 
         TitleHolder(View itemView) {
             super(itemView);
 
-            tv0 = (TextView) itemView.findViewById(R.id.tv0);
             recyclerView = itemView.findViewById(R.id.recyclerView);
 
         }

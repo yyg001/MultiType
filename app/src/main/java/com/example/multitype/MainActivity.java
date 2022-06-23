@@ -71,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         recycleView.setLayoutManager(new LinearLayoutManager(this));
         multiTypeAdapter = new MultiTypeAdapter();
         multiTypeAdapter.register(AlllBean.class).to(new TitleViewBinder(),
-                new TitleViewBinder2(),
-                new TitleViewBinder3()).withLinker(new Linker<AlllBean>() {
+                new TitleViewBinder3(),
+                new TitleViewBinder2()).withLinker(new Linker<AlllBean>() {
             @Override
             public int index(int position, @NonNull AlllBean alllBean) {
                 return position;

@@ -31,7 +31,7 @@ public class TitleViewBinder3 extends ItemViewBinder<AlllBean, TitleViewBinder3.
     @NonNull
     @Override
     public TitleHolder onCreateViewHolder(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
-        View view = layoutInflater.inflate(R.layout.view2, viewGroup, false);
+        View view = layoutInflater.inflate(R.layout.view3, viewGroup, false);
         return new TitleHolder(view);
     }
 
@@ -46,7 +46,6 @@ public class TitleViewBinder3 extends ItemViewBinder<AlllBean, TitleViewBinder3.
     }
 
     static class TitleHolder extends RecyclerView.ViewHolder {
-        ImageView icon0;
         TextView tv0;
 
         TitleHolder(View itemView) {
